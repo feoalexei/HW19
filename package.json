@@ -1,0 +1,31 @@
+{
+  "name": "hillel-home-work",
+  "version": "1.0.0",
+  "description": "Make your code greate again",
+  "main": "",
+  "scripts": {
+    "lint": "eslint ./",
+    "prettier": "prettier --write src/*.js"
+  },
+  "author": "Alexei",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "moment": "^2.24.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "git add"
+    ]
+  }
+}

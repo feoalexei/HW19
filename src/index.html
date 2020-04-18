@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <title>Hillel home work 19</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Task List</h1>
+        <form class="login-form">
+            <input type="email" placeholder="Enter your email" value="holden@gmail.com">
+            <button>Login</button>
+        </form>
+        <div class="new-task-section hide">
+            <h2>Note new task:</h2>
+            <form class="note-form">
+                <input type="text" placeholder="Enter your note">
+                <button type="submit">Add note</button>
+            </form>
+        </div>
+        
+        <div class="current-task-section hide">
+            <h2>Current tasks:</h2>    
+            <ul class="note-list"></ul>  
+        </div>
+        <div class="loader hide">
+            <img src="loader.gif" alt="">
+        </div>
+    </div>
+    <script src="../node_modules/moment/min/moment.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

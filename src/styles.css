@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+.container,
+.new-task-section,
+.current-task-section {
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.new-task-section,
+.current-task-section {
+    width: 90%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    text-align: left;
+}
+h2 {
+    color: red;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    font-size: 1.25rem;
+    width: 79%;
+}
+
+.note-list input {
+    width: 68.5%;
+    border-width: 0;
+}
+
+button {
+    font-size: 1.25rem;
+    width: 20%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 3px 6px;
+    background-color: darkorange;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+button:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+.note-list button {
+    font-size: 1rem;
+    margin: 1px;
+    width: 15%
+}
+
+.note-list {
+    font-size: 1.25rem;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.note-list__item--completed {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+li:not(:last-child) {  
+    padding: 5px 0 15px 0;
+    border-bottom: 2px solid lightgray;
+}
+
+span {
+    display: inline-block;
+    width: 53%;
+    text-align: left;
+}
+
+.date-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+span.date {
+    color: lightgrey;
+    font-style: italic;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+span.date:nth-child(2) {
+    text-align: right;
+}
+
+.hide {
+    display: none !important;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.3);
+}
+
+.loader img {
+    width: 25%;
+    height: 50%;
+}
+
